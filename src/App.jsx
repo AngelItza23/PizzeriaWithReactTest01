@@ -1,3 +1,4 @@
+/* 
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -32,4 +33,35 @@ function App() {
   )
 }
 
-export default App
+export default App*/
+
+
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './pages/Login';
+import Home from './pages/Home';
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home" element={<Home />} />
+        
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
+
+
+/*import React from "react";
+import Login from "./Login";
+
+function App() {
+  return <Login />;
+}
+
+export default App;
+*/
