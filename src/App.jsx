@@ -38,7 +38,7 @@ export default App*/
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Login from './pages/Login';
+import Login from './pages/Login_v2';
 import Home from './pages/Home';
 
 function App() {
